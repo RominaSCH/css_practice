@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Bree Serif', serif;
+}
+:root{
+    --basic-color:#191919;
+    --couple-color:#BD8F4D;
+}
+a, a:visited{
+    color: #000;
+    text-decoration: none;
+}
+svg{
+    width: 22px;
+    height: 22px;
+}
+body{
+    min-height: 100vh;
+    background-color: #fff;
+}
+.nav{
+    position: fixed;
+    width: 60px;
+    height: 100%;
+    background: var(--basic-color);
+    overflow: hidden;
+    transition: .2s ease-in-out;
+}
+.nav:hover{
+    width: 170px;
+}
+.nav ul{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+}
+.nav ul li{
+   position: relative; 
+   width: 100%;
+   list-style: none;
+}
+.nav ul li:hover{
+    background-color: var(--couple-color);
+}
+.nav ul li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    color: #fff;
+    align-items: center;
+}
+.nav ul li a .icon{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    padding: 18px;
+}
+.nav ul li a .title{
+    position: relative;
+    display: block;
+    padding: 0;
+    height: 60px;
+    line-height: 60px;
+    text-align: start;
+    white-space: nowrap;
+}
